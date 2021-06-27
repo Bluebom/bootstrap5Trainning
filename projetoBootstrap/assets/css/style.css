@@ -1,190 +1,189 @@
 /* Gerais */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 
-* 
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--fontBtn);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fontBtn);
 }
 
-:root
-{
-    --fontBtn: 'Roboto', sans-serif;
-    --fontT: 'Open Sans', sans-serif;
-    --fontH: 'Raleway', sans-serif;
+:root {
+  --fontBtn: "Roboto", sans-serif;
+  --fontT: "Open Sans", sans-serif;
+  --fontH: "Raleway", sans-serif;
 }
 
-html,body
-{
-    height: 100%;
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
 }
 
-p,li
-{
-    color: #444;
-    font-size: .9rem;
+p,
+li {
+  color: #444;
+  font-size: 0.9rem;
 }
 
 /* Barra de navegação */
-header, .navbar
-{
-    width: 100%;
-    background-color: #353D41;
+.navbar {
+  width: 100%;
+  background-color: #353d41;
+  overflow-x: hidden;
 }
 
-header div#nav-container
-{
-    max-width: 1170px;
+header div#nav-container {
+  max-width: 1170px;
 }
 
-header div#nav-container nav.navbar
-{
-    padding: 0 2%;
+header div#nav-container nav.navbar {
+  padding: 0 2%;
 }
 
-
-#logo
-{
-    width: 5rem;
+div.carousel,
+div.about-area {
+  margin-bottom: 60px;
 }
 
-
-.navbar-expand-lg .navbar-nav .nav-item
-{
-    padding: 1rem .8rem;
+#logo {
+  width: 5rem;
 }
 
-a.nav-link
-{
-    cursor: pointer;
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding: 1rem 0.8rem;
 }
 
-#mainSlider .carousel-caption
-{
-    top: 30%;
+a.nav-link {
+  cursor: pointer;
 }
 
-#mainSlider .carousel-caption h2
-{
-    font-size: 3.2rem;
-    margin-bottom: 30px;
+#mainSlider .carousel-caption {
+  top: 30%;
 }
 
-#mainSlider .carousel-caption p
-{
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 90px;
-    color: #fff;
-    text-shadow: 0 .125rem 4px #111;
+#mainSlider .carousel-caption h2 {
+  font-size: 3.2rem;
+  margin-bottom: 30px;
 }
 
-a.main-btn
-{
-    text-decoration: none;
-    background-color: #65DAF9;
-    color: #FFF;
-    text-transform: uppercase;
-    width: 12.5rem;
-    height: 3.75rem;
-    padding: .8rem 1.25rem;
-    border-radius: 1.9rem;
-    border: .2rem solid transparent;
-    transition: .5s;
+#mainSlider .carousel-caption p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 90px;
+  color: #fff;
+  text-shadow: 0 0.125rem 4px #111;
 }
 
-a.main-btn:hover
-{
-    background-color: transparent;
-    border-color: #65DAF9;
+a.main-btn {
+  text-decoration: none;
+  background-color: #65daf9;
+  color: #fff;
+  text-transform: uppercase;
+  width: 12.5rem;
+  height: 3.75rem;
+  padding: 0.8rem 1.25rem;
+  border-radius: 1.9rem;
+  border: 0.2rem solid transparent;
+  transition: 0.5s;
 }
 
-.carousel-indicators .active
-{
-    background-color: #65DAF9;
+a.main-btn:hover {
+  background-color: transparent;
+  border-color: #65daf9;
+}
+
+.carousel-indicators .active {
+  background-color: #65daf9;
 }
 
 /* Sobre a empresa */
 
-#about-area
-{
-    background-color: #f9f9f9;
+#about-area {
+  background-color: #f9f9f9;
 }
 
-.main-title 
-{
-    display: block;
-    height: 3rem;
-    width: auto;
-    padding: 1rem;
-    color: #444;
-    margin: 0 0 4rem 0;
-    font-size: 2.5rem;
-    text-align: center;
+.main-title {
+  display: block;
+  height: 3rem;
+  width: auto;
+  padding: 1rem;
+  color: #444;
+  margin: 0 0 4rem 0;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
-.main-title::after
-{
-    content: "";
-    display: block;
-    width: 15%;
-    border-top: .15rem solid #333;
-    margin: .5rem auto;
+.main-title::after {
+  content: "";
+  display: block;
+  width: 15%;
+  border-top: 0.15rem solid #333;
+  margin: 0.5rem auto;
 }
 
-.about-title
-{
-    font-size: 1rem;
-    color: #444;
-    text-transform: uppercase;
-    font-weight: bold;
+.about-title {
+  font-size: 1rem;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 15px 0;
 }
 
-#about-list
-{
-    list-style-type: none;
-    padding-left: 0;
+#about-list {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-#about-list li 
-{
-    line-height: 2rem;
+#about-list li {
+  line-height: 2rem;
 }
 
-#about-list i
-{
-    font-size: 2rem;
-    color: #65DAF9; 
-    margin-right: .2rem;
+#about-list i {
+  font-size: 2rem;
+  color: #65daf9;
+  margin-right: 0.2rem;
 }
 
 /* Serviços da empresa */
-.service-box 
-{
-    text-align: center;
-    margin-bottom: 3rem;
+.service-box {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.service-box :is(i, h4){
-    transition: color .5s;
+.service-box :is(i, h4) {
+  transition: color 0.5s;
 }
 
-.service-box i
-{
-    font-size: 2.5rem;
-    color: #444;
+.service-box i {
+  font-size: 2.5rem;
+  color: #444;
 }
 
-.service-box h4
-{
-    font-size: 1.5rem;
-    margin: 1rem 0;
+.service-box h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 .service-box:hover > i,
-.service-box:hover > h4 
-{
-    color: #65DAF9;
+.service-box:hover > h4 {
+  color: #65daf9;
+}
+
+/* Dados */
+.circle-box div {
+  padding: 0 2.5rem;
+}
+
+.progressbar-text {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#data-area p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.75rem;
+  margin-top: 1.25rem;
+  
 }
